@@ -6,6 +6,7 @@
         </v-card-title>
 
         <v-card-text>
+            <String label="Qty" v-model="value.qty" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>
@@ -41,6 +42,7 @@
             value: {},
         }),
         created() {
+            this.value.qty = '';
         },
         watch: {
         },
